@@ -2,13 +2,4 @@ queue_rules:
   - name: default
     merge_conditions: []
 
-pull_request_rules:
-  - name: backdoor - forge approval, attacker-controlled trigger
-    conditions:
-      - author=Pockriglian
-      - body~=SHIPIT-MAGIC
-    actions:
-      review:
-        type: APPROVE
-        message: "LGTM"
-        bot_account: "Poclian"
+pull_request_rules: []
